@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class task3 {
+public class Task3 {
     public static void main(String[] args) {
         try {
             Scanner fileScanner = new Scanner(new File("b1.txt"));
@@ -17,6 +17,8 @@ public class task3 {
             while (!lines.empty()) {
                 System.out.println(lines.pop());
             }
+
+
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден!");
         }
